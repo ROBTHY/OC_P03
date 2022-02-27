@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+header
+{
+  display: flex;
+  font-family: 'Roboto', 'Shrikhand', Arial, Impact, "Arial Black", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  justify-content: space-between;
+}
+
+/* Agencement optimisé pour une largeur de 992px */
+#conteneur_global
+{
+  display: flex;
+  /* width : 100%; */
+  width : 320px;
+  /* height : 1000px; */
+  flex-direction : column;
+  align-items: center; 
+  border: 4px solid green;
+}
+
+/* *** EN TÊTE LIENS *** */
+/*************************/
+
+#logo_accueil
+{
+max-width : 60%;
+height : auto;
+}
+
+#accueil_titre_texte
+{
+  display: flex;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 80%
+}
+
+#accueil_titre
+{
+  display: flex;
+  Width : 33%;
+  height : 20px;
+  flex-direction : row; 
+  justify-content : space-between;
+  align-items: center;
+}
+
+#accueil_slogan_01
+{
+  display: flex;
+  Width : 100%;
+  height : 60px;
+  font-size: 100%;
+  font-weight: bold;
+  text-align : center;
+  justify-content : center;
+  align-items: flex-end;
+  background-color: #EAEDED;
+}
+
+#accueil_slogan_02
+{
+  display: flex;
+  Width : 100%;
+  height : 60px;
+  font-size: 90%;
+  font-weight: normal;
+  text-align : center;
+  justify-content : center;
+  align-items: center;
+  background-color: #EAEDED;
+}
+
+#accueil_slogan_03
+{
+  display: flex;
+  font-family: 'Roboto';
+  Width : 50%;
+  height : 40px;
+  font-size: 80%;
+  color: white;
+  font-weight: normal;
+  justify-content : center;
+  align-items: center;
+  background-color: #FF79DA;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#accueil_slogan_03_conteneur
+{
+  display: flex;
+  Width : 100%;
+  height : 60px;
+  padding-bottom: 30px;
+  justify-content : center;
+  align-items: center;
+  background-color: #EAEDED;
+}
+
+#accueil_titre_conteneur
+{
+  display: flex;
+  Width : 100%;
+  height : 40px;
+  flex-direction : row; 
+  justify-content : center;
+  align-items: center;
+  background-color: #D5DBDB ;
+  border-top : 4px solid grey;
+}
+
+#accueil
+{
+  display: flex;
+  Width : 100%;
+  /* height : 300px; */
+  flex-direction : column; 
+  justify-content :  flex-start;
+  align-items: center;
+}
+
+#conteneur_logo
+{
+  display: flex;
+  Width : 100%;
+  height : 50px;
+  flex-direction : row; 
+  justify-content : center;
+  align-items: center;
+}
+
+#en_tete
+{
+  display: flex;
+  Width : 100%;
+  flex-direction : column; 
+  justify-content : center;
+  align-items: center;
+}
+
+/* *** FONCTIONNEMENT *** */
+/**************************/
+
+.sgrey
+{
+  color : grey;
+}
+
+#fonctionnement_titre_position
+{
+  display: flex;
+  font-family: 'Roboto';
+  Width : 100%;
+  height : 50px;
+  position: relative;
+  top: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  flex-direction : row; 
+  justify-content : flex-start;
+  align-items: center;
+}
+
+#fonctionnement_titre_conteneur
+{
+  display: flex;
+  Width : 90%;
+  height : 50px;
+  flex-direction : row; 
+  align-items: center;
+}
+
+.fonctionnement_bouton_icones
+{
+  display: flex;
+  Width : 20%;
+  height : 60px;
+  flex-direction : row; 
+  justify-content :space-between;
+  align-items: center;
+  /* border: 2px solid orange; */
+}
+
+.fonctionnement_bouton_enum
+{
+  display: flex;
+  Width : 22px;
+  height : 22px;
+  flex-direction : row; 
+  justify-content :center;
+  align-items: center;
+  background-color: #9356DC;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.fonctionnement_couleur_enum
+{
+  font-family: 'Roboto';
+  font-size: 80%;
+  color: white;
+}
+
+.fonctionnement_bouton_texte
+{
+  display: flex;
+  Width : 60%;
+  height : 60px;
+  font-family: 'Roboto';
+  font-size: 80%;
+  font-weight: bold;
+  flex-direction : row; 
+  justify-content :space-around;
+  align-items: center;
+}
+
+.fonctionnement_bouton
+{
+  display: flex;
+  Width : 90%;
+  height : 60px;
+  flex-direction : row;
+  background-color: #EAEDED;
+  border-radius: 15px 15px 15px 15px;
+}
+
+
+#fonctionnement_bouton_conteneur
+{
+  display: flex;
+  Width : 100%;
+  height : 230px;
+  flex-direction : column; 
+  justify-content : space-around;
+  align-items: center;
+}
+
+#fonctionnement
+{
+  display: flex;
+  Width : 100%;
+  margin-bottom: 40px;
+  flex-direction : column; 
+  justify-content : center;
+  align-items: center;
+}
+
+/* *** RESTAURANTS *** */
+/***********************/
+
+.restaurant_image
+ {
+  width: 300px;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 16px 16px 0px 0px;
+}
+
+.restaurant_txtbox_01
+ { 
+  font-family: 'Roboto';
+  font-size: 80%;
+  width : 140px;
+  height: 20px;
+  font-weight: bold;
+  background-color: white;
+  }
+
+.restaurant_txtbox_02
+ {
+  font-family: 'Roboto';
+  font-size: 80%;
+  width : 140px;
+  height: 20px;
+  font-weight: normal;
+  background-color: white;
+  }
+
+.restaurant_txtbox_conteneur
+ {
+  /* font-family: 'Raleway'; */
+  display: flex;
+  width : 250px;
+  height: 60px;
+  flex-direction : column;
+  justify-content : center;
+  background-color: white;
+  }
+
+.restaurant_carte_info
+{
+  display: flex;
+  width : 300px;
+  height: 60px;
+  flex-direction : row;
+  justify-content : space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 0px 0px 16px 16px;
+  /* border: 2px solid red; */
+}
+
+.restaurants_carte_nouveau
+{
+  display: flex;
+  font-family: 'Roboto';
+  Width : 80px;
+  height : 28px;
+  position: relative;
+  Top: 50px;
+  left: 100px;
+  font-size: 90%;
+  flex-direction : column; 
+  justify-content : space-around;
+  align-items: center;
+  color : green;
+  background-color: #8befcb;
+  /* border: 2px solid red; */
+}
+
+.vide
+{
+  background-color: #11ffee00;
+}
+
+.restaurants_carte
+{
+  display: flex;
+  Width : 100%;
+  height : 180px;
+  flex-direction : column; 
+  justify-content : flex-end;
+  align-items: center;
+  /* border: 2px solid orange; */
+}
+
+
+.restaurants_carte_photo_conteneur
+{
+ display: flex;
+  Width : 100%;
+  height : 180px;
+  flex-direction : column; 
+  justify-content : flex-end;
+  align-items: center;
+  /* border: 4px solid blueviolet; */
+}
+
+.restaurants_cartes_conteneur
+{
+  display: flex;
+  Width : 100%;
+  height : 230px;
+  flex-direction : column; 
+  justify-content : center;
+  align-items: center;
+  /* border: 4px solid blue; */
+}
+#restaurants_titre_position
+{
+  display: flex;
+  font-family: 'Roboto';
+  Width : 100%;
+  height : 50px;
+  position: relative;
+  top: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  flex-direction : row; 
+  justify-content : flex-start;
+  align-items: flex-end;
+  /* border: 2px solid red; */
+}
+
+#restaurants_titre_conteneur
+{
+  display: flex;
+  Width : 90%;
+  height : 60px;
+  flex-direction : column; 
+  justify-content : space-around;
+  align-items: center;
+  /* border: 2px solid blueviolet; */
+}
+
+#restaurants
+{
+  display: flex;
+  Width : 100%;
+  padding-bottom: 50px;
+  flex-direction : column; 
+  justify-content : center;
+  align-items: center;
+  background-color: #EAEDED;
+}
+
+/* *** FOOTER *** */
+/******************/
+
+.footer_bas
+{
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 80%;
+  Width : 80%;
+  height : 30px;
+  color: white;
+}
+
+.footer_milieu_icone
+{
+  display: flex;
+  Width : 25px;
+  height : 30px;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items : flex-start;
+  color : white;
+  color : white;
+  /* border: 2px solid red; */
+}
+
+.footer_milieu_texte
+{
+  display: flex;
+  Width : 70%;
+  height : 30px;
+  font-family: 'Roboto';
+  font-size: 80%;
+  /* font-weight: bold; */
+  color : white;
+  /* border: 2px solid green; */
+}
+
+.footer_milieu
+{
+  display: flex;
+  Width : 80%;
+  height : 30px;
+  flex-direction : row; 
+  justify-content : flex-start;
+  /* border: 2px solid blue; */
+}
+
+
+#footer_haut
+{
+  display: flex;
+  font-family: 'Shrikhand';
+  font-size: 120%;
+  Width : 80%;
+  height : 50px;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items: center ;
+  color: white;
+}
+
+#footer
+{
+  display: flex;
+  Width : 100%;
+  flex-direction : column;
+  justify-content : center;
+  align-items: center ; 
+  background-color: black;
+}
+
+/* *** CSS COMMUN A TOUS LES FICHIERS HTML DES RESTOS *** */
+/**********************************************************/
+
+/* *** RESTO : HEADER *** */
+/**************************/
+
+.fa-arrow-left
+{
+  display: flex;
+  position: relative;
+  flex-direction : column; 
+  bottom : 10px;
+}
+
+#resto_conteneur_logo
+{
+  display: flex;
+  Width : 80%;
+  height : 50px;
+  flex-direction : row; 
+  justify-content : space-around;
+  align-items: flex-end;
+  /* border: 2px solid orange; */
+}
+
+#resto_en_tete
+{
+  display: flex;
+  Width : 100%;
+  flex-direction : column; 
+  justify-content : center;
+  align-items: flex-start;
+}
+
+.resto_menu_image
+ {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  position: relative;
+  top: 20px;
+}
+
+/* *** RESTO : PRESENTATION *** */
+/********************************/
+
+#coeur_logo_conteneur
+{
+  display: flex;
+  Width : 20%;
+  height : 50px;
+  flex-direction : row;
+  justify-content : center;
+  align-items: center ;
+}
+
+#resto_menu_titre
+{
+  display: flex;
+  Width : 60%;
+  height : 50px;
+  font-family: 'Shrikhand';
+  font-size: 120%;
+  align-items: center ;
+}
+
+#resto_menu_titre_conteneur
+{
+  display: flex;
+  Width : 100%;
+  /*height: 40px; */
+  position: relative;
+  bottom: 15px;
+  flex-direction : row;
+  justify-content: space-around;
+  background-color: #EAEDED;
+  border-radius: 30px 30px 0px 0px;
+  /* border: 2px solid blue; */
+}
+
+#resto_menu_presentation
+{
+  display: flex;
+  Width : 100%;
+  /* height : 300px; */
+  flex-direction : column;
+  justify-content: space-between;
+  background-color: #EAEDED;
+  /* border: 2px solid red; */
+}
+
+/* *** RESTO : : MENU CONTENU *** */
+/**********************************/
+
+.resto_plat_ligne_02_texte
+{
+  display: flex;
+  Width : 90%;
+  height : 20px;
+  font-family: 'Roboto';
+  font-size: 80%;
+  font-weight: normal;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items: center;
+}
+
+.resto_plat_ligne_02_prix
+{
+  display: flex;
+  Width : 10%;
+  height : 20px;
+  font-family: 'Roboto';
+  font-size: 90%;
+  font-weight: bold;
+  flex-direction : row;
+  justify-content : center;
+  align-items: center;
+}
+.resto_plat_ligne_02
+{
+  display: flex;
+  Width : 90%;
+  height : 20px;
+  flex-direction : row;
+  justify-content : space-between;
+}
+
+.resto_plat_ligne_01
+{
+  display: flex;
+  Width : 90%;
+  height : 20px;
+  font-family: 'Roboto';
+  font-size: 90%;
+  font-weight: bold;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items: center;
+}
+
+.resto_plat
+ {
+  display: flex;
+  Width : 95%;
+  height: 50px;
+  margin-bottom: 10px;
+  flex-direction : column;
+  justify-content : center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  /* border: 2px solid red; */
+}
+
+.resto_menu_plats_titre
+ {
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 100%;
+  Width : 85%;
+  height : 35px;
+  /* margin-top: 20px; */
+  flex-direction : row;
+  align-items: flex-start ;
+  /* border: 2px solid green; */
+}
+
+.resto_menu_plats
+ {
+  display: flex;
+  Width : 100%;
+  /* height : 400px; */
+  margin-bottom: 20px;
+  flex-direction : column;
+  justify-content : flex-start;
+  align-items: center ;
+  /* border: 4px solid orange; */
+}
+
+#resto_menu_contenu
+{
+  display: flex;
+  Width : 100%;
+  /* height : 300px; */
+  padding-bottom: 10px;
+  flex-direction : column;
+  /* justify-content: space-between; */
+  background-color: #EAEDED;
+  /* border: 2px solid blue; */
+}
