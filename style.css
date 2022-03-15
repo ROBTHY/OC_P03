@@ -86,7 +86,7 @@ height : auto;
   font-weight: normal;
   justify-content : center;
   align-items: center;
-  background-color: #FF79DA;
+  background : linear-gradient(to left top, #9356DC, #FF79DA);
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 6px 6px #BFC9CA;
   transition: all 450ms;
@@ -94,7 +94,7 @@ height : auto;
 
 #accueil_slogan_03:hover
 {
-  background-color: #FB88DC;
+  background : linear-gradient(to left top, #b180ec, #f29fdb);
   box-shadow: 0px 6px 6px #839192;
 }
 
@@ -245,7 +245,6 @@ height : auto;
   box-shadow: 0px 6px 6px #BFC9CA;
   transition: all 450ms;
 }
-
 
 .fonctionnement_bouton:hover
 {
