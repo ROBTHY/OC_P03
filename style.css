@@ -288,6 +288,49 @@ height : auto;
   border-radius: 16px 16px 0px 0px;
 }
 
+.coeur_vide
+{
+    z-index: 2;
+    color: grey;
+    opacity: 1;
+}
+
+.noir
+{
+    color: black;
+}
+
+.coeur_plein
+{   
+  position: absolute;
+  color : violet;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 3000ms;
+}
+
+.coeur_vide:hover + .coeur_plein
+{
+    opacity: 1;
+}
+
+.coeur_vide:hover
+{
+    opacity: 0;
+}
+
+.coeurs
+{
+  display: flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid blue; */
+  z-index: 0;
+}
+
 .restaurant_txtbox_01
  { 
   font-family: 'Roboto';
