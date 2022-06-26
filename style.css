@@ -12,8 +12,10 @@ header
 
 body
 {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  width : 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 #conteneur_loader
@@ -26,7 +28,7 @@ body
   align-items: center;
   background-color: lightgrey;
   animation: disparition 0.1s;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   position : fixed;
   z-index: 1;
@@ -56,15 +58,13 @@ body
 }
 
 /* Agencement optimisé pour une largeur de 320px */
+
 #conteneur_global
 {
   display: flex;
-  /* width : 100%; */
-  width : 320px;
-  /* height : 1000px; */
+  width : 100%;
   flex-direction : column;
   align-items: center; 
-  border: 4px solid green;
 }
 
 /* *** EN TÊTE LIENS *** */
@@ -87,7 +87,9 @@ height : auto;
 #accueil_titre
 {
   display: flex;
-  Width : 33%;
+  width : 33%;
+  max-width : 120px;
+  min-width : 110px;
   height : 20px;
   flex-direction : row; 
   justify-content : space-between;
@@ -97,7 +99,7 @@ height : auto;
 #accueil_slogan_01
 {
   display: flex;
-  Width : 100%;
+  Width : 40%;
   height : 60px;
   font-size: 100%;
   font-weight: bold;
@@ -125,6 +127,8 @@ height : auto;
   display: flex;
   font-family: 'Roboto';
   Width : 50%;
+  max-width : 200px;
+  min-width : 190px;
   height : 40px;
   font-size: 80%;
   color: white;
@@ -142,7 +146,6 @@ height : auto;
   background : linear-gradient(to left top, #b180ec, #f29fdb);
   box-shadow: 0px 6px 6px #839192;
 }
-
 
 #accueil_slogan_03_conteneur
 {
@@ -171,10 +174,10 @@ height : auto;
 {
   display: flex;
   Width : 100%;
-  /* height : 300px; */
   flex-direction : column; 
   justify-content :  flex-start;
   align-items: center;
+  background-color: #EAEDED;
 }
 
 #conteneur_logo
@@ -182,6 +185,8 @@ height : auto;
   display: flex;
   Width : 100%;
   height : 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   flex-direction : row; 
   justify-content : center;
   align-items: center;
@@ -209,9 +214,7 @@ height : auto;
   display: flex;
   font-family: 'Roboto';
   Width : 100%;
-  height : 50px;
-  position: relative;
-  top: 10px;
+  height : 30px;
   font-size: 100%;
   font-weight: bold;
   flex-direction : row; 
@@ -223,7 +226,9 @@ height : auto;
 {
   display: flex;
   Width : 90%;
-  height : 50px;
+  max-width : 400px;
+  height : 30px;
+  margin-top: 30px;
   flex-direction : row; 
   align-items: center;
 }
@@ -277,8 +282,10 @@ height : auto;
 .fonctionnement_bouton
 {
   display: flex;
-  Width : 90%;
+  width : 100%;
+  max-width : 600px;
   height : 60px;
+  margin-top: 15px;
   flex-direction : row-reverse;
   justify-content :space-around;
   align-items: center;
@@ -296,23 +303,32 @@ height : auto;
 
 .fonctionnement_bouton:hover > .sgrey
 {
-   color : #9356DC;
+  color : #9356DC;
 }
 
 #fonctionnement_bouton_conteneur
 {
   display: flex;
-  Width : 100%;
-  height : 230px;
+  Width : 90%;
+  max-width : 400px;
+  height : 300px;
   flex-direction : column; 
-  justify-content : space-around;
+}
+
+#fonctionnement_conteneur
+{
+  display: flex;
+  Width : 90%;
+  height : 300px;
+  flex-direction : column; 
+  justify-content : center;
   align-items: center;
 }
 
 #fonctionnement
 {
   display: flex;
-  Width : 100%;
+  Width : 95%;
   margin-bottom: 40px;
   flex-direction : column; 
   justify-content : center;
@@ -332,33 +348,42 @@ height : auto;
 
 .coeur_vide
 {
-    z-index: 2;
-    color: grey;
-    opacity: 1;
+  z-index: 2;
+  color: grey;
+  opacity: 1;
 }
 
 .noir
 {
-    color: black;
+  color: black;
+}
+
+.fa-lg-spe
+{
+  font-size:  1.33333em;
+  vertical-align : -0.0667em;
 }
 
 .coeur_plein
 {   
   position: absolute;
-  color : violet;
+  background : linear-gradient(to top, #f29fdb, #b180ec);
   opacity: 0;
   z-index: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   transition: opacity 3000ms;
 }
 
-.coeur_vide:hover + .coeur_plein
+.coeur_vide:active + .coeur_plein
 {
-    opacity: 1;
+  opacity: 1;
 }
 
-.coeur_vide:hover
+.coeur_vide:active
 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .coeurs
@@ -394,14 +419,12 @@ height : auto;
 
 .restaurant_txtbox_conteneur
  {
-  /* font-family: 'Raleway'; */
   display: flex;
   width : 250px;
   height: 60px;
   flex-direction : column;
   justify-content : center;
   background-color: white;
-  /*border: 2px solid red; */
   border-radius: 0px 0px 0px 16px;
   }
 
@@ -415,7 +438,6 @@ height : auto;
   align-items: center;
   background-color: white;
   border-radius: 0px 0px 16px 16px;
-  /* border: 2px solid red; */
 }
 
 .restaurants_carte_nouveau
@@ -432,8 +454,7 @@ height : auto;
   justify-content : space-around;
   align-items: center;
   color : green;
-  background-color: #8befcb;
-  /* border: 2px solid red; */
+  background-color: #99E2D0;
 }
 
 .vide
@@ -449,29 +470,26 @@ height : auto;
   flex-direction : column; 
   justify-content : flex-end;
   align-items: center;
-  /* border: 2px solid orange; */
 }
 
 .restaurants_carte_photo_conteneur
 {
  display: flex;
   Width : 100%;
-  height : 180px;
+  height : 150px;
   flex-direction : column; 
   justify-content : flex-end;
   align-items: center;
-  /* border: 4px solid blueviolet; */
 }
 
 .restaurants_cartes_conteneur
 {
   display: flex;
   Width : 100%;
-  height : 230px;
+  height : 225px;
   flex-direction : column; 
   justify-content : center;
   align-items: center;
-  /* border: 4px solid blue; */
 }
 
 .restaurants_cartes_conteneur_demi_global
@@ -481,28 +499,25 @@ height : auto;
   flex-direction : column; 
   justify-content : center;
   align-items: center;
-  /* border: 2px solid blue; */
  }
 
 #restaurants_cartes_conteneur_global
 {
   display: flex;
   Width : 100%;
-  /* height : 1000px; */
   flex-direction : column; 
   justify-content : center;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
-#restaurants_titre_position
+.restaurants_titre_position
 {
   display: flex;
   font-family: 'Roboto';
-  Width : 100%;
-  height : 50px;
+  Width : 300px;
+  height : 20px;
   position: relative;
-  top: 10px;
+  top: -20px;
   font-size: 100%;
   font-weight: bold;
   flex-direction : row; 
@@ -510,20 +525,11 @@ height : auto;
   align-items: flex-end;
 }
 
-#restaurants_titre_conteneur
-{
-  display: flex;
-  Width : 90%;
-  height : 60px;
-  flex-direction : column; 
-  justify-content : space-around;
-  align-items: center;
-}
-
 #restaurants
 {
   display: flex;
   Width : 100%;
+  padding-top: 30px;
   padding-bottom: 50px;
   flex-direction : column; 
   justify-content : center;
@@ -564,9 +570,6 @@ height : auto;
   height : 30px;
   font-family: 'Roboto';
   font-size: 80%;
-  flex-direction : row;
-  justify-content : flex-start;
-  align-items : center;
   color : white;
 }
 
@@ -578,7 +581,6 @@ height : auto;
   flex-direction : row; 
   justify-content : flex-start;
 }
-
 
 #footer_haut
 {
@@ -673,7 +675,6 @@ height : auto;
 {
   display: flex;
   Width : 100%;
-  /*height: 40px; */
   position: relative;
   bottom: 15px;
   flex-direction : row;
@@ -686,7 +687,6 @@ height : auto;
 {
   display: flex;
   Width : 100%;
-  /* height : 300px; */
   flex-direction : column;
   justify-content: space-between;
   background-color: #EAEDED;
@@ -759,7 +759,8 @@ height : auto;
 .resto_plat
  {
   display: flex;
-  Width : 95%;
+  width : 95%;
+  max-width : 350px;
   height: 50px;
   margin-bottom: 10px;
   flex-direction : row;
@@ -821,7 +822,7 @@ height : auto;
   flex-direction : column;
   justify-content :center;
   align-items: center;
-  background-color: yellowgreen;
+  background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -865,7 +866,7 @@ height : auto;
 
 .resto_plat:hover > .resto_plat_droit .cgreen
 {
- color : yellowgreen;
+ color : #99E2D0;
 }
 
 .resto_menu_plats_titre
@@ -873,7 +874,8 @@ height : auto;
   display: flex;
   font-family: 'Roboto';
   font-size: 100%;
-  Width : 85%;
+  width : 95%;
+  max-width : 350px;
   height : 35px;
   flex-direction : row;
   align-items: flex-start ;
@@ -899,17 +901,18 @@ height : auto;
   background-color: #EAEDED;
 }
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre fait au minimum 992 px */
-@media all and (min-width: 992px)
-
+.resto_menu_plats_global
 {
-
-#conteneur_global
-{
-  /* Width : 100%; */
-  Width : 992px;
-  border: 4px solid red;
+  display: flex;
+  Width : 100%; 
+  flex-direction : column;
+  align-items : center;
 }
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre fait au minimum 1400 px */
+@media all and (min-width: 1400px)
+
+{
 
 #conteneur_logo
 {
@@ -926,37 +929,60 @@ height : auto;
   Width : 20%;
 }
 
-.fonctionnement_bouton
+#fonctionnement_titre_conteneur
 {
-  Width : 30%;
+  Width : 95%;
+  max-width : none;
+  margin-bottom: 10px;
 }
 
 #fonctionnement_bouton_conteneur
 {
- height : 80px;
- flex-direction : row; 
- justify-content : space-around;
+  Width : 95%;
+  max-width : none;
+  flex-direction : row;
+  justify-content : space-between;
+}
+
+.fonctionnement_bouton
+{
+  Width : 30%;
+  margin-top: 0px;
+}
+
+#fonctionnement_bouton_conteneur
+{
+   flex-direction : row;
+}
+
+#fonctionnement_conteneur
+{
+  Width : 100%;
+  height : 140px;
+  flex-direction : column; 
+  justify-content : space-around;
+  align-items: center;
 }
 
 .restaurant_image
 {
-  width: 200px;
+  width: 300px;
 }
 
 .restaurant_txtbox_conteneur
 {
-  width : 150px;
+  width : 200px;
   height: 50px;
 }
 
 .restaurant_carte_info
 {
-  width : 200px;
+  width : 300px;
 }
 
 .restaurants_carte_nouveau
 {
-  left: 50px;
+  left: 100px;
 }
 
 .restaurants_cartes_conteneur_demi_global
@@ -981,6 +1007,12 @@ height : auto;
   align-items : center;
 }
 
+.footer_milieu_texte
+{
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items : center;
+}
 #footer_haut
 {
     justify-content : center;
@@ -1006,36 +1038,19 @@ height : auto;
 
 #resto_menu_titre
 {
+  padding-top: 10px;
   Width : 65%;
   font-size: 160%;
 }
 
-#resto_menu_titre_conteneur
-{
-  justify-content: center;
-}
-
 .resto_menu_plats
  {
-  display: flex;
   Width : 70%;
-  margin-bottom: 20px;
-  flex-direction : column;
-  justify-content : flex-start;
-  align-items: center ;
 }
 
 .resto_plat
  {
-  display: flex;
   Width : 70%;
-  height: 50px;
-  margin-bottom: 10px;
-  flex-direction : column;
-  justify-content : center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
 }
 
 .resto_plat_fond
@@ -1045,12 +1060,7 @@ height : auto;
 
 #resto_menu_contenu
 {
-  display: flex;
-  Width : 100%;
-  padding-bottom: 10px;
-  flex-direction : column;
   align-items: center ;
-  background-color: #EAEDED;
 }
 
 #accueil_slogan_03
@@ -1058,20 +1068,19 @@ height : auto;
   font-size: 90%;
 }
 
+.resto_menu_plats_global
+{
+  flex-direction : row;
+}
+
 }
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 991px */
-@media all and (min-width: 768px) and (max-width: 991px)
+@media all and (min-width: 768px) and (max-width: 1399px)
 
 {
 
 /* Agencement optimisé pour une largeur de 820 px (iPad Air) */
-#conteneur_global
-{
-  /* Width : 100%; */
-  Width : 820px;
-  border: 4px solid blue;
-}
 
 #conteneur_logo
 {
@@ -1088,21 +1097,44 @@ height : auto;
   Width : 24%;
 }
 
-.fonctionnement_bouton
+#fonctionnement_titre_conteneur
 {
-  Width : 30%;
+  Width : 95%;
+  max-width : none;
+  margin-bottom: 10px;
 }
 
 #fonctionnement_bouton_conteneur
 {
- height : 80px;
- flex-direction : row; 
- justify-content : space-around;
+  Width : 95%;
+  max-width : none;
+  flex-direction : row;
+  justify-content : space-between;
+}
+
+.fonctionnement_bouton
+{
+  Width : 30%;
+  margin-top: 0px;
+}
+
+#fonctionnement_bouton_conteneur
+{
+   flex-direction : row;
+}
+
+#fonctionnement_conteneur
+{
+  Width : 100%;
+  height : 140px;
+  flex-direction : column; 
+  justify-content : space-around;
+  align-items: center;
 }
 
 .restaurant_image
 {
-  width: 250px;
+  width: 300px;
 }
 
 .restaurant_txtbox_conteneur
@@ -1113,12 +1145,12 @@ height : auto;
 
 .restaurant_carte_info
 {
-  width : 250px;
+  width : 300px;
 }
 
 .restaurants_carte_nouveau
 {
-  left: 50px;
+  left: 100px;
 }
 
 #restaurants_cartes_conteneur_global
@@ -1137,6 +1169,13 @@ height : auto;
   align-items : center;
 }
 
+.footer_milieu_texte
+{
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items : center;
+}
+
 #footer_haut
 {
     justify-content : center;
@@ -1162,36 +1201,19 @@ height : auto;
 
 #resto_menu_titre
 {
+  padding-top: 10px;
   Width : 65%;
   font-size: 160%;
 }
 
-#resto_menu_titre_conteneur
-{
-  justify-content: center;
-}
-
 .resto_menu_plats
  {
-  display: flex;
   Width : 70%;
-  margin-bottom: 20px;
-  flex-direction : column;
-  justify-content : flex-start;
-  align-items: center ;
-}
+ }
 
 .resto_plat
  {
-  display: flex;
   Width : 70%;
-  height: 50px;
-  margin-bottom: 10px;
-  flex-direction : column;
-  justify-content : center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px 10px 10px 10px;
 }
 
 .resto_plat_fond
@@ -1201,12 +1223,7 @@ height : auto;
 
 #resto_menu_contenu
 {
-  display: flex;
-  Width : 100%;
-  padding-bottom: 10px;
-  flex-direction : column;
   align-items: center ;
-  background-color: #EAEDED;
 }
 
 #accueil_slogan_03
